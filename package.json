@@ -1,0 +1,14 @@
+{
+  "name": "curl-download-iar",
+  "version": "1.0.0",
+  "description": "Project to download IAR from dev OIC server",
+  "main": "curlToDownloadIntegration.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ameya Pethe",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-libcurl": "^2.0.1"
+  }
+}
