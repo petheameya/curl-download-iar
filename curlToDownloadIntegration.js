@@ -10,6 +10,9 @@ const curlDownload = new Curl();
 
 curlDownload.setOpt(Curl.option.URL, 'https://swoicdev1-sherwinwilliamsoci.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/integrations/LOADPDHEMEABULKUPDATESBETA|01.00.0000/archive');
 //curlDownload.setOpt(Curl.option.USERNAME, '');
+console.log("Username- " + process.argv[2]);
+console.log("Username- " + process.argv[3]);
+
 curlDownload.setOpt(Curl.option.USERPWD, process.argv[2] + ':' + process.argv[3]);
 curlDownload.setOpt(Curl.option.SSL_VERIFYHOST, 0);
 curlDownload.setOpt(Curl.option.SSL_VERIFYPEER, 0);
