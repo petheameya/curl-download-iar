@@ -13,7 +13,7 @@ curlDownload.setOpt(Curl.option.URL, 'https://swoicdev1-sherwinwilliamsoci.integ
 curlDownload.setOpt(Curl.option.USERPWD, process.argv[2] + ':' + process.argv[3]);
 curlDownload.setOpt(Curl.option.SSL_VERIFYHOST, 0);
 curlDownload.setOpt(Curl.option.SSL_VERIFYPEER, 0);
-//curlDownload.setOpt(Curl.option.VERBOSE, true);
+curlDownload.setOpt(Curl.option.VERBOSE, true);
 
 curlDownload.setOpt(Curl.option.WRITEFUNCTION, (buff, nmemb, size) => {
     let written = 0
