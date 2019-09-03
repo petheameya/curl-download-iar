@@ -8,7 +8,7 @@ const fileOut = fs.openSync(fileOutPath, 'w+')
 
 const curlDownload = new Curl();
 
-curlDownload.setOpt(Curl.option.URL, 'https://swoicdev1-sherwinwilliamsoci.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/integrations/LOADPDHEMEABULKUPDATESBETA|01.00.0000/archive');
+curlDownload.setOpt(Curl.option.URL, process.argv[4] + ':443/ic/api/integration/v1/integrations/' + process.argv[5] + '|' + process.argv[6] + '/archive');
 //curlDownload.setOpt(Curl.option.USERNAME, '');
 console.log("Username- " + process.argv[2]);
 console.log("Username- " + process.argv[3]);
